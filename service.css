@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.top {
+    background: #faf4f4;
+    text-align: center;
+    padding: 6px 0;
+}
+.top h5 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+#nav {
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imglogo img {
+    width: 150px;
+}
+
+#navlink ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+#navlink ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+#icons {
+    display: flex;
+    gap: 20px;
+}
+
+#icons h3 {
+    font-size: 20px;
+    cursor: pointer;
+}
+#ganpati {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+#image1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#text, #cartext, #text3 {
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+#text h3, #cartext h3, #text3 h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#text p, #cartext p, #text3 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #444;
+}
+
+#flo-img,
+#carimage,
+#partyimages #carimage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-box img,
+.image-car img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform .3s ease;
+}
+
+.image-box img:hover,
+.image-car img:hover {
+    transform: scale(1.03);
+}
+@media (max-width: 1100px) {
+    #nav {
+        padding: 15px 40px;
+    }
+}
+@media (max-width: 768px) {
+
+    #nav {
+        padding: 12px 25px;
+    }
+
+    #imglogo img {
+        width: 130px;
+    }
+
+    #navlink ul {
+        gap: 22px;
+    }
+
+    #text h3, #cartext h3, #text3 h3 {
+        font-size: 26px;
+    }
+
+    .image-box img,
+    .image-car img {
+        height: 250px;
+    }
+}
+@media (max-width: 550px) {
+
+    #nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 15px;
+    }
+
+    #navlink ul {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    #icons {
+        gap: 14px;
+    }
+
+
+    #text h3, #cartext h3, #text3 h3 {
+        font-size: 22px;
+    }
+
+    #text p, #cartext p, #text3 p {
+        font-size: 14px;
+    }
+
+    .image-box img,
+    .image-car img {
+        height: 200px;
+    }
+}
+@media (max-width: 400px) {
+
+    #imglogo img {
+        width: 110px;
+    }
+
+    #navlink ul li a {
+        font-size: 14px;
+    }
+}
+
+
+.footer {
+    background: #faf8ff;
+    padding: 30px 40px;
+    color: #222;
+}
+
+.footer-top {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 15px;
+    align-items: center;
+}
+
+.footer-top a {
+    color: #222;
+    text-decoration: none;
+}
+
+.footer-top a:hover {
+    text-decoration: underline;
+}
+
+.dot {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
